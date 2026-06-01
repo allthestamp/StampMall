@@ -164,7 +164,7 @@ header {
   font-weight: 900;
   background: #ffffff;
   box-shadow: var(--shadow-soft);
-  padding: 10px;
+  padding: 12px;
 }
 
 .logo span {
