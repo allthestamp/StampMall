@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00b95a">
+  <title>스탬프몰 후면주입 리필 안내</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="wrap">
+        <div class="hero">
+          <div>
+            <div class="brand" aria-label="Stampmall self ink refill guide">
+              <strong>STAMPMALL</strong>
+              <span>SELF INK REFILL GUIDE</span>
+            </div>
+            <p class="subtitle"><em>스탬프몰</em> 후면주입 리필 안내</p>
+          </div>
+          <div class="logo" aria-label="Stampmall logo">STAMP<span>MALL</span></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="panel type-card mobile-selector">
+        <h2>후면주입 타입 선택</h2>
+        <p>설명서에 표시된 고객님의 스탬프 타입을 선택해 주세요.</p>
+        <div class="type-tabs" aria-label="후면주입 타입 선택">
+          <button type="button" data-type="b" aria-pressed="true">B 타입</button>
+          <button type="button" data-type="c" aria-pressed="false">C 타입</button>
+          <button type="button" data-type="d" aria-pressed="false">D 타입</button>
+        </div>
+      </section>
+
+      <section class="guide-grid">
+        <article class="panel">
+          <div class="panel-head">
+            <p class="eyebrow" id="eyebrow">B TYPE | BACK INJECTION</p>
+            <h1 id="title">B 타입 후면주입 리필 방법</h1>
+            <p class="lead">스탬프 후면의 잉크 주입구에 천천히 잉크를 넣는 방식입니다. 설명서에 표시된 B, C, D 타입을 선택해 주세요.</p>
+          </div>
+
+          <div class="content">
+            <figure class="gif-frame">
+              <img id="guideGif" src="../assets/back-b-refill.gif" alt="B 타입 후면주입 리필 방법 GIF">
+              <figcaption class="gif-fallback hidden" id="gifFallback">
+                <strong>GIF 영역</strong>
+                완성된 GIF 파일을 아래 파일명으로 넣으면 이 영역에 자동 표시됩니다.
+                <br>
+                <code id="gifPath">assets/back-b-refill.gif</code>
+              </figcaption>
+            </figure>
+
+            <ol class="steps" id="steps"></ol>
+          </div>
+        </article>
+
+        <aside class="side-stack">
+          <section class="panel type-card desktop-selector">
+            <h2>후면주입 타입 선택</h2>
+            <p id="description">설명서에 표시된 고객님의 스탬프 타입을 선택해 주세요.</p>
+            <div class="type-tabs" aria-label="후면주입 타입 선택">
+              <button type="button" data-type="b" aria-pressed="true">B 타입</button>
+              <button type="button" data-type="c" aria-pressed="false">C 타입</button>
+              <button type="button" data-type="d" aria-pressed="false">D 타입</button>
+            </div>
+          </section>
+
+          <section class="panel notice">
+            <h2>충전 전 확인사항</h2>
+            <ul>
+              <li>한 번에 너무 많은 양을 넣지 마세요. 과충전 시 번짐이나 잉크 누수가 생길 수 있습니다.</li>
+              <li>충전 후 바로 사용하지 말고, 뚜껑을 닫은 상태로 충분히 흡수될 시간을 주세요.</li>
+              <li>의류나 손에 잉크가 묻으면 지워지기 어려울 수 있으니 주변을 보호해 주세요.</li>
+              <li>오래 사용하지 않아 기공이 막힌 경우, 잉크를 리필한 뒤 테스트 인쇄를 반복해 주세요.</li>
+            </ul>
+          </section>
+
+          <section class="panel contact">
+            <h2>문의</h2>
+            <p>충전 방식이 헷갈리거나 타입 확인이 필요하면 스탬프 사진과 함께 문의해 주세요.</p>
+            <div class="contact-list">
+              <span>전화 010-8409-2802</span>
+              <span>메일 allthestamp@naver.com</span>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>STAMPMALL back injection guide</span>
+        <span id="currentType">B 타입 후면주입</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const guides = {
+      b: {
+        label: "B",
+        eyebrow: "B TYPE | BACK INJECTION",
+        title: "B 타입 후면주입 리필 방법",
+        gif: "../assets/back-b-refill.gif",
+        gifPath: "assets/back-b-refill.gif",
+        alt: "B 타입 후면주입 리필 방법 GIF",
+        description: "B 타입 후면주입 안내입니다. 설명서에 표시된 타입이 B인지 확인해 주세요.",
+        steps: [
+          ["후면 주입구를 확인합니다", "스탬프를 뒤집거나 상부를 분리해 B 타입 주입구 위치를 확인해 주세요."],
+          ["잉크를 천천히 넣습니다", "주입구에 잉크가 넘치지 않도록 소량씩 천천히 충전해 주세요."],
+          ["60분 정도 기다립니다", "잉크가 내부 패드에 충분히 흡수될 때까지 뚜껑을 닫아 보관해 주세요."],
+          ["이면지에 테스트합니다", "처음에는 잉크가 진하게 나올 수 있으니 이면지에 여러 번 테스트 후 사용해 주세요."]
+        ]
+      },
+      c: {
+        label: "C",
+        eyebrow: "C TYPE | BACK INJECTION",
+        title: "C 타입 후면주입 리필 방법",
+        gif: "../assets/back-c-refill.gif",
+        gifPath: "assets/back-c-refill.gif",
+        alt: "C 타입 후면주입 리필 방법 GIF",
+        description: "C 타입 후면주입 안내입니다. 설명서에 표시된 타입이 C인지 확인해 주세요.",
+        steps: [
+          ["후면 주입구를 확인합니다", "스탬프를 뒤집거나 상부를 분리해 C 타입 주입구 위치를 확인해 주세요."],
+          ["잉크를 천천히 넣습니다", "주입구에 잉크가 넘치지 않도록 소량씩 천천히 충전해 주세요."],
+          ["60분 정도 기다립니다", "잉크가 내부 패드에 충분히 흡수될 때까지 뚜껑을 닫아 보관해 주세요."],
+          ["이면지에 테스트합니다", "처음에는 잉크가 진하게 나올 수 있으니 이면지에 여러 번 테스트 후 사용해 주세요."]
+        ]
+      },
+      d: {
+        label: "D",
+        eyebrow: "D TYPE | BACK INJECTION",
+        title: "D 타입 후면주입 리필 방법",
+        gif: "../assets/back-d-refill.gif",
+        gifPath: "assets/back-d-refill.gif",
+        alt: "D 타입 후면주입 리필 방법 GIF",
+        description: "D 타입 후면주입 안내입니다. 설명서에 표시된 타입이 D인지 확인해 주세요.",
+        steps: [
+          ["후면 주입구를 확인합니다", "스탬프를 뒤집거나 상부를 분리해 D 타입 주입구 위치를 확인해 주세요."],
+          ["잉크를 천천히 넣습니다", "주입구에 잉크가 넘치지 않도록 소량씩 천천히 충전해 주세요."],
+          ["60분 정도 기다립니다", "잉크가 내부 패드에 충분히 흡수될 때까지 뚜껑을 닫아 보관해 주세요."],
+          ["이면지에 테스트합니다", "처음에는 잉크가 진하게 나올 수 있으니 이면지에 여러 번 테스트 후 사용해 주세요."]
+        ]
+      }
+    };
+
+    const typeFromHash = () => {
+      const value = window.location.hash.replace("#", "").trim().toLowerCase();
+      return guides[value] ? value : "b";
+    };
+
+    function render(type) {
+      const guide = guides[type];
+      const guideGif = document.querySelector("#guideGif");
+      const fallback = document.querySelector("#gifFallback");
+
+      document.querySelector("#eyebrow").textContent = guide.eyebrow;
+      document.querySelector("#title").textContent = guide.title;
+      document.querySelector("#description").textContent = guide.description;
+      document.querySelector("#currentType").textContent = `${guide.label} 타입 후면주입`;
+      document.querySelector("#gifPath").textContent = guide.gifPath;
+
+      guideGif.classList.remove("hidden");
+      fallback.classList.add("hidden");
+      guideGif.alt = guide.alt;
+      guideGif.src = guide.gif;
+      guideGif.onerror = () => {
+        guideGif.classList.add("hidden");
+        fallback.classList.remove("hidden");
+      };
+      guideGif.onload = () => {
+        guideGif.classList.remove("hidden");
+        fallback.classList.add("hidden");
+      };
+
+      document.querySelector("#steps").innerHTML = guide.steps.map(([title, body]) => (
+        `<li><h2>${title}</h2><p>${body}</p></li>`
+      )).join("");
+
+      document.querySelectorAll("[data-type]").forEach((button) => {
+        button.setAttribute("aria-pressed", button.dataset.type === type ? "true" : "false");
+      });
+    }
+
+    document.querySelectorAll("[data-type]").forEach((button) => {
+      button.addEventListener("click", () => {
+        window.location.hash = button.dataset.type;
+        render(button.dataset.type);
+      });
+    });
+
+    window.addEventListener("hashchange", () => render(typeFromHash()));
+    render(typeFromHash());
+  </script>
+</body>
+</html>
